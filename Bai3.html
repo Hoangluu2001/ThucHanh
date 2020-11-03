@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>đếm số chữ nguyên âm trong chuỗi</title>
 </head>
 <body>
 <script>
@@ -14,14 +14,14 @@
             }
         }
         if (count == 0){
-            console.log(false);
+            return false;
         }
         else {
-            console.log(count);
+            return count;
         }
     }
-    let str = "aaabbjjkkeueio";
-    (countCharacter(str));
+    let str = prompt("nhap chuỗi bất kì ");
+    document.write(countCharacter(str));
 </script>
 </body>
 </html>

@@ -2,32 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>khai báo lớp và 2 đối tượng </title>
+    <script src="Animal.js"></script>
+
 </head>
 <body>
 <script>
-    class Animal{
-        constructor(name,weight) {
-            this.name=name;
-            this.weight=weight;
-        }
-        getName=function (){
-            return document.write(this.name);
-        }
-        getWeight=function (){
-            return document.write(this.weight +"<br>");
-        }
-        toString=function (){
-            return document.write(this.name +"  :  "+this.weight+"<br>")
-        }
-    }
-    let objAnimal1=new Animal("Elephant",45.6);
+    let objAnimal1 = new Animal("Elephant",45.6);
     objAnimal1.toString();
-    objAnimal1.getName();
-    objAnimal1.getWeight();
-    let objAnimal2=new Animal("Mouse",8);
-    objAnimal2.toString();
-
+    let objAnimal2 = new Animal(this.name, this.weight);
+    objAnimal2.setName("Mouse");
+    document.write(objAnimal2.getName());
 </script>
 </body>
 </html>
