@@ -11,20 +11,22 @@
             this.name=name;
             this.weight=weight;
         }
-        getname=function (){
-            return document.write(this.name+" ");
+        getName=function (){
+            return document.write(this.name);
         }
-        getweight=function (){
-            return document.write(this.weight);
+        getWeight=function (){
+            return document.write(this.weight +"<br>");
         }
         toString=function (){
-            return document.write(this.name +"  :  "+this.weight)
+            return document.write(this.name +"  :  "+this.weight+"<br>")
         }
     }
     let objAnimal1=new Animal("Elephant",45.6);
-    // objAnimal1.getname();
-    // objAnimal1.getweight();
     objAnimal1.toString();
+    objAnimal1.getName();
+    objAnimal1.getWeight();
+    let objAnimal2=new Animal("Mouse",8);
+    objAnimal2.toString();
 
 </script>
 </body>
